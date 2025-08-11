@@ -1,52 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nirbhaugatka Academy - Gatka Sport</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #fffaf0; color: #333; }
-    header { background: #1a1a1a; color: white; padding: 1rem 2rem; text-align: center; }
-    header h1 { margin: 0; font-size: 2rem; }
-    nav { background: #ffcc00; padding: 0.5rem; text-align: center; }
-    nav a { color: #1a1a1a; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    section { padding: 2rem; }
-    .hero { background: url('https://upload.wikimedia.org/wikipedia/commons/2/2b/Gatka_performance.jpg') center/cover no-repeat; text-align: center; padding: 5rem 2rem; }
-    .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #4b2e00; font-weight: bold; }
-    .hero p { font-size: 1.2rem; max-width: 700px; margin: auto; font-weight: bold; color: #2e2000; }
-    .courses, .about, .contact, .join { max-width: 900px; margin: auto; }
-    .course-item { background: #fff3cd; padding: 1rem; margin: 1rem 0; border-radius: 8px; }
-    form { background: #fff3cd; padding: 1.5rem; border-radius: 8px; }
-    form input, form textarea { width: 100%; padding: 0.5rem; margin: 0.5rem 0; border: 1px solid #ccc; border-radius: 4px; }
-    form button { background: #cc9900; color: white; padding: 0.7rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; }
-    form button:hover { background: #a37a00; }
-    footer { background: #1a1a1a; color: white; text-align: center; padding: 1rem; }
-    footer a { color: white; margin: 0 8px; text-decoration: none; display: inline-flex; align-items: center; }
-    footer a:hover { color: #ffcc00; }
-    footer img { width: 20px; height: 20px; margin-right: 5px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirbhaugatka Academy</title>
+    <style>
+        body {font-family: Arial, sans-serif;margin: 0;padding: 0;background-color: #111;color: #fff;}
+        header {background-color: #222;padding: 20px;text-align: center;}
+        header h1 {margin: 0;color: #ffcc00;}
+        nav a {color: #ffcc00;margin: 0 10px;text-decoration: none;}
+        .hero {background: url('gatka-bg.jpg') no-repeat center center/cover;padding: 100px 20px;text-align: center;}
+        .hero h2 {color: #ffcc00;font-size: 2.5em;}
+        .hero p {color: #d4af37;font-size: 1.2em;}
+        section {padding: 40px 20px;}
+        form {max-width: 400px;margin: auto;display: flex;flex-direction: column;}
+        form input, form textarea {margin: 10px 0;padding: 10px;border: none;border-radius: 5px;}
+        form button {background-color: #ffcc00;color: #111;padding: 10px;border: none;border-radius: 5px;cursor: pointer;}
+        form button:hover {background-color: #e6b800;}
+        .contact-details p {margin: 5px 0;}
+        .players {display: flex;flex-wrap: wrap;gap: 20px;justify-content: center;}
+        .player-card {background: #222;padding: 20px;border-radius: 10px;text-align: center;width: 200px;}
+        .player-card img {width: 100%;border-radius: 10px;}
+        footer {background-color: #222;text-align: center;padding: 20px;margin-top: 20px;}
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Nirbhaugatka Academy</h1>
-    <p>Dedicated to the Traditional Sikh Martial Art of Gatka</p>
-  </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#courses">Training</a>
-    <a href="#join">Join</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <section class="hero">
-    <h2>Master the Art of Gatka</h2>
-    <p>Also join Nirbhaugatka Academy to learn the spiritual, mental, and physical discipline of Gatka under expert guidance.</p>
-  </section>
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>Nirbhaugatka Academy is committed to preserving and teaching Gatka, the traditional Sikh martial art that combines agility, discipline, and respect. We provide authentic training to students of all ages in a safe and encouraging environment.</p>
-  </section>
-  <section id="courses" class="courses">
+    <header>
+        <h1>Nirbhaugatka Academy</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#players">Players</a>
+            <a href="#contact">Contact</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Master the Art of Gatka</h2>
+        <p>Join Nirbhaugatka Academy to learn the spiritual, mental, and physical discipline of Gatka under expert guidance</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Nirbhaugatka Academy is dedicated to preserving and teaching the ancient Sikh martial art of Gatka. Our experienced instructors provide comprehensive training to develop your body, mind, and spirit.</p>
+    </section>
+
+    <section id="players">
+        <h2>Our Players</h2>
+        <div class="players">
+            <div class="player-card">
+                <img src="player1.jpg" alt="Player 1">
+                <h3>Player 1</h3>
+                   Under 19
+                  HARNOOR SINGH 
+                <p>Expert in single soti </p>
+            </div>
+            <div class="player-card">
+                <img src="player2.jpg" alt="Player 2">
+                <h3>Player 2</h3>
+                   Under 19
+                  vikaspreet singh
+                <p>Expert in fari soti </p>
+            </div>
+            <div class="player-card">
+                <img src="player3.jpg" alt="Player 3">
+                <h3>Player </h3>
+                Navkirat singh, Harnoor singh, Vikaspreet singh, Rohandeep singh and Simarnirayn singh
+                <p>Champion in Gatka tournaments in under 19</p>
+            </div>
+          </div> 
+           <div class="coach-card">
+             <img src="coach.jpg" alt="coach">
+             <h4>Coach</h4>
+             SARDAAR JOGINDER SINGH JI 
+             <P>Coach of ower academy(nirbhaugayka academy)and founder of this academy </P>
+        </div>
+    </section>
+
+  
     <h2>Our Training Programs</h2>
     <div class="course-item">
       <h3>Beginner Gatka</h3>
@@ -54,48 +86,50 @@
     </div>
     <div class="course-item">
       <h3>Intermediate Gatka</h3>
-      <p>Develop advanced skills, combinations, demo and controlled sparring techniques.</p>
+      <p>Develop advanced skills, combinations, demo and controlled sparring techniques we teach you fight both single soti and fari soti all age player are there like under 14,17 and 19 
+      .</p>
     </div>
     <div class="course-item">
       <h3>Advanced Gatka</h3>
       <p>Train like a professional with high-level combat strategies, performance choreography, and tournaments.</p>
     </div>
   </section>
-  <section id="join" class="join">
-    <h2>Join Nirbhaugatka Academy</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="tel" name="phone" placeholder="Your Phone Number" required>
-      <textarea name="message" rows="4" placeholder="Tell us about your interest in Gatka" required></textarea>
-      <button type="submit">Join Now</button>
-    </form>
-  </section>
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: nirbhaugatkaacademy@gmail.com</p>
-    <p>Phone: +91-9592096218</p>
-    <p>Coach Phone: +91-9877510018</p>
-    <p>WhatsApp: +91-8427106218</p>
-    <p>Location: Amritsar, Punjab, India</p>
-  </section>
-  <footer>
-    <p>&copy; 2025 Nirbhaugatka Academy. All Rights Reserved.</p>
-    <p>
-      Follow us on Instagram:  
-      <a href="https://www.instagram.com/itsvikas847" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">@itsvikas847
-      </a>
-      <a href="https://www.instagram.com/_nav_singh_1_" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">@_nav_singh_1_
-      </a>
-      <a href="https://www.instagram.com/bhagsingh_goraya25" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">@bhagsingh_goraya25
-      </a>
-      <a href="https://www.instagram.com/harnoor.ramgarhia" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">@harnoor.ramgarhia
-      </a>
-    </p>
-  </footer>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Join Now</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Nirbhaugatka Academy</h2>
+        <div class="contact-details">
+            <p><strong>Address:</strong> Nirbhaugatka Academy, Main Gatka Street, Punjab, India</p>
+            <p><strong>Phone:</strong> +91-98765-43210</p>
+            <p><strong>Email:</strong> info@nirbhaugatkaacademy.com</p>
+        </div>
+        <h3>Join Us</h3>
+        <section id="courses" class="courses">
+
+    <footer>
+        <p>&copy; 2025 Nirbhaugatka Academy. All rights reserved.</p>
+        <p>
+            <a href="https://instagram.com/itsvikas847" target="_blank">itsvikas847</a> |
+            <a href="https://instagram.com/_nav_singh_1_" target="_blank">_nav_singh_1_</a> |
+            <a href="https://instagram.com/bhagsingh_goraya25" target="_blank">bhagsingh_goraya25</a> |
+            <a href="https://instagram.com/harnoor.ramgarhia" target="_blank">harnoor.ramgarhia</a>
+        </p>
+    </footer>
 </body>
 </html>
+
